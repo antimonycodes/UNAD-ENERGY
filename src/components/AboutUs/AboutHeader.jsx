@@ -26,7 +26,7 @@ const AboutHeader = () => {
 
   return (
     <div
-      className="p-4 md:px-8 md:py-8 h-[500px] bg-center bg-cover bg-no-repeat relative"
+      className="p-4 md:px-12 md:py-4 h-[500px] bg-center bg-cover bg-no-repeat relative"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundRepeat: "no-repeat",
@@ -35,7 +35,7 @@ const AboutHeader = () => {
       }}
     >
       <Nav />
-      <div className="pt-[7%]">
+      <div className="p-[7%]">
         <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[6rem]">
           Delivering Alternative <span className="text-orangee"> Energy</span>{" "}
           Solutions

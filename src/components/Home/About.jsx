@@ -12,15 +12,15 @@ const About = () => {
   const [ref, inView] = useInView({ threshold: 0.1 });
 
   return (
-    <div ref={ref} className="p-4 bg-secondary text-center lg:px-28">
+    <div ref={ref} className="p-4 text-center bg-secondary lg:px-28">
       <div className="flex flex-col items-center gap-8">
-        <h1 className="text-3xl text-whiteText font-bold">About Us</h1>
+        <h1 className="text-3xl font-bold text-whiteText">About Us</h1>
         <p className="md:max-w-[30rem] font-semibold">
           Our mission is to deliver energy solutions for productive use. We do
           this by deploying products, services and systems that power homes and
           business operations and improve economic outcomes for our clients.​
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 w-fit text-whiteText">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-8 w-fit text-whiteText">
           {aboutGrid.map((item, index) => (
             <NumberCard
               key={index}
@@ -44,12 +44,12 @@ const NumberCard = ({ number, text, inView }) => {
   const suffix = number.replace(/[0-9]/g, ""); // Extract non-numeric part
 
   return (
-    <div className="px-8 py-6 bg-gradient-to-b from-[#E5E812] to-[#109B3B] rounded-lg">
-      <h2 className="text-4xl font-bold pb-4 text-black">
+    <div className="px-8 py-6 bg-gradient-to-b text from-[#E5E812] to-[#109B3B] rounded-lg">
+      <h2 className="pb-4 text-4xl font-bold text-whiteText">
         {count}
         {suffix}
       </h2>
-      <p className="text-sm text-black">{text}</p>
+      <p className="font-medium text-whiteText">{text}</p>
     </div>
   );
 };

@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hovered, setHovered] = useState(null);
+  const location = useLocation();
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/aboutUs" },
@@ -16,8 +19,12 @@ const Nav = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
-    <nav className="flex items-center gap-8 ">
+    <nav className="flex items-center gap-8">
       <img
         src="/logo.png"
         alt="Logo"
@@ -26,12 +33,19 @@ const Nav = () => {
       />
       <div className="z-50 items-center hidden gap-8 list-none md:flex">
         {navLinks.map((navlink, index) => (
-          <li key={index} className="">
+          <li
+            key={index}
+            className={`px-4 py-2 rounded-3xl ${
+              isActive(navlink.path) || hovered === index ? "bg-[#0D8F41]" : ""
+            }`}
+            // onMouseEnter={() => setHovered(index)}
+            // onMouseLeave={() => setHovered(null)}
+          >
             <Link to={navlink.path}>{navlink.name}</Link>
           </li>
         ))}
       </div>
-      <div className={` md:hidden z-50 ${menuOpen ? "pl-[70%]" : null}`}>
+      <div className={`md:hidden z-[999] ${menuOpen ? "pl-[70%]" : null}`}>
         <button
           onClick={toggleMenu}
           className="relative w-8 h-8 focus:outline-none"
@@ -55,11 +69,17 @@ const Nav = () => {
       </div>
       {menuOpen && (
         <div>
-          <div className="absolute top-0 left-0 z-50  h-screen bg-white flex  flex-col-reverse text-darkText w-[80%] list-none items-center justify-center md:hidden">
+          <div className="absolute top-0 left-0 z-50 h-screen bg-white flex flex-col-reverse text-darkText w-[80%] list-none items-center justify-center md:hidden">
             {navLinks.map((navlink, index) => (
-              <div key={index} className=" mt-[-6rem]">
+              <div key={index} className="mt-[-6rem]">
                 <Link to={navlink.path}>
-                  <li className="mb-4 text-xl">{navlink.name}</li>
+                  <li
+                    className={`mb-4 text-xl ${
+                      isActive(navlink.path) ? "text-[#0D8F41]" : ""
+                    }`}
+                  >
+                    {navlink.name}
+                  </li>
                 </Link>
               </div>
             ))}
