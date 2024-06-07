@@ -17,21 +17,21 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between ">
+    <nav className="flex items-center gap-8 ">
       <img
         src="/logo.png"
         alt="Logo"
         width={70}
-        className="z-10 md:mx-0 hidden md:block mx-auto"
+        className="z-10 hidden mx-auto md:mx-0 md:block"
       />
-      <div className="hidden md:flex list-none items-center  gap-8">
+      <div className="z-50 items-center hidden gap-8 list-none md:flex">
         {navLinks.map((navlink, index) => (
-          <li key={index} className=" ">
+          <li key={index} className="">
             <Link to={navlink.path}>{navlink.name}</Link>
           </li>
         ))}
       </div>
-      <div className={` md:hidden z-10 ${menuOpen ? "pl-[70%]" : null}`}>
+      <div className={` md:hidden z-50 ${menuOpen ? "pl-[70%]" : null}`}>
         <button
           onClick={toggleMenu}
           className="relative w-8 h-8 focus:outline-none"
@@ -55,7 +55,7 @@ const Nav = () => {
       </div>
       {menuOpen && (
         <div>
-          <div className="absolute top-0 left-0  h-screen bg-white flex  flex-col-reverse text-darkText w-[80%] list-none items-center justify-center md:hidden">
+          <div className="absolute top-0 left-0 z-50  h-screen bg-white flex  flex-col-reverse text-darkText w-[80%] list-none items-center justify-center md:hidden">
             {navLinks.map((navlink, index) => (
               <div key={index} className=" mt-[-6rem]">
                 <Link to={navlink.path}>

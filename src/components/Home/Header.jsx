@@ -6,6 +6,7 @@ const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSwitch, setAutoSwitch] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [dividerLeft, setDividerLeft] = useState("42.3%");
 
   const slides = [
     {
@@ -42,6 +43,7 @@ const Header = () => {
     const updateBackground = () => {
       const width = window.innerWidth;
       setIsMobile(width <= 768);
+      setDividerLeft(`${(width / 100) * 42.3}%`); // Adjust the left position
     };
 
     // Update background on mount
@@ -68,16 +70,16 @@ const Header = () => {
       {!isMobile && (
         <>
           <div className="absolute top-0 left-0">
-            <img src="/gradient.png" alt="" width={480} />
+            <img src="/gradient.png" alt="" className=" w-[30rem]" />
           </div>
-          <div className="absolute top-0 left-[30.3%]">
+          <div className="absolute top-0" style={{ left: dividerLeft }}>
             <img src="/divider.png" alt="" width={412} />
           </div>
         </>
       )}
 
       <Nav />
-      <div className="absolute z-50 top-[25%]  md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold">
+      <div className="absolute  top-[25%]  md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold">
         <h1>Sustainable Solar Electricity for</h1>
         <Typewriter text="Homes" /> {/* Use the Typewriter component */}
       </div>
