@@ -5,6 +5,8 @@ import Typewriter from "./Typewriter"; // Import the Typewriter component
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSwitch, setAutoSwitch] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
   const slides = [
     {
       img: "/banner.png",
@@ -36,40 +38,63 @@ const Header = () => {
     );
   };
 
+  useEffect(() => {
+    const updateBackground = () => {
+      const width = window.innerWidth;
+      setIsMobile(width <= 768);
+    };
+
+    // Update background on mount
+    updateBackground();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", updateBackground);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener("resize", updateBackground);
+  }, []);
+
   return (
     <div
-      className="relative p-4 md:px-12 w-full bg-cover bg-center bg-no-repeat h-[600px]"
+      className={`relative p-4 md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
+        isMobile ? "bg-gradient-to-r from-[#060512] to-[#28992C]" : ""
+      }`}
       style={{
-        backgroundImage: `url(${slides[currentIndex].img})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundImage: !isMobile
+          ? `url(${slides[currentIndex].img})`
+          : ` linear-gradient(143deg, rgba(16,16,16,1) 46%, rgba(14,119,55,1) 57%)`,
       }}
     >
-      {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+      {!isMobile && (
+        <>
+          <div className="absolute top-0 left-0">
+            <img src="/gradient.png" alt="" width={480} />
+          </div>
+          <div className="absolute top-0 left-[30.3%]">
+            <img src="/divider.png" alt="" width={412} />
+          </div>
+        </>
+      )}
 
-      <div className="absolute top-0 left-0">
-        <img src="/gradient.png" alt="" width={480} />
-      </div>
-      <div className="absolute top-0 left-[30.3%]">
-        <img src="/divider.png" alt="" width={412} />
-      </div>
       <Nav />
-      <div className="absolute z-50 top-[25%] max-w-[650px] text-white text-7xl font-semibold">
+      <div className="absolute z-50 top-[25%]  md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold">
         <h1>Sustainable Solar Electricity for</h1>
         <Typewriter text="Homes" /> {/* Use the Typewriter component */}
       </div>
       {/* slider indicator */}
-      <div className="flex absolute bottom-8 right-[20%]">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`h-2 rounded-full mx-1 cursor-pointer ${
-              index === currentIndex ? "w-8" : "w-2"
-            } ${index === currentIndex ? "bg-[#0D8F41]" : "bg-[#FFF4EC]"}`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div>
+      {!isMobile && (
+        <div className="flex absolute bottom-8 right-[20%]">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`h-2 rounded-full mx-1 cursor-pointer ${
+                index === currentIndex ? "w-8" : "w-2"
+              } ${index === currentIndex ? "bg-[#0D8F41]" : "bg-[#FFF4EC]"}`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
