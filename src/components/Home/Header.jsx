@@ -1,12 +1,23 @@
 import { useEffect, useState } from "react";
 import Nav from "../Nav";
-import Typewriter from "./Typewriter"; // Import the Typewriter component
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+
+// import Typewriter from "./Typewriter"; // Import the Typewriter component
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSwitch, setAutoSwitch] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [dividerLeft, setDividerLeft] = useState("42.3%");
+
+  const [text, helper] = useTypewriter({
+    words: ["Homes"],
+    loop: {},
+    typeSpeed: "100",
+    deleteSpeed: "100",
+  });
+
+  const { isType, isDelete, isDelay, isDone } = helper;
 
   const slides = [
     {
@@ -83,7 +94,13 @@ const Header = () => {
       <Nav />
       <div className="absolute  top-[25%]  md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold">
         <h1>Sustainable Solar Electricity for</h1>
-        <Typewriter text="Homes" /> {/* Use the Typewriter component */}
+        <span className="text-orangee  text-5xl md:text-7xl font-semibold">
+          {text}
+        </span>
+        <span>
+          <Cursor cursorColor="#e27b16" />
+        </span>
+        {/* <Typewriter text="Homes" />  */}
       </div>
       {/* slider indicator */}
       {!isMobile && (
