@@ -12,7 +12,7 @@ const About = () => {
   const [ref, inView] = useInView({ threshold: 0.1 });
 
   return (
-    <div ref={ref} className="p-4 text-center bg-secondary lg:px-28">
+    <div ref={ref} className="px-4 py-8 text-center bg-secondary lg:px-28">
       <div className="flex flex-col items-center gap-8">
         <h1 className="text-3xl font-bold text-whiteText">About Us</h1>
         <p className="md:max-w-[30rem] font-semibold">

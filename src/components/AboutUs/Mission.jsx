@@ -1,6 +1,6 @@
 const Mission = () => {
   return (
-    <div className=" bg-primary px-4 py-6 md:px-12 text-darkText text-center flex flex-col md:flex-row gap-8">
+    <div className=" bg-primary px-4 py-8 md:px-12 text-darkText text-center flex flex-col md:flex-row gap-8">
       <div className=" flex flex-col gap-8 w-full md:basis-[50%]">
         <h1 className=" text-3xl font-semibold">Our Mission</h1>
         <p className=" font-medium ">

@@ -1,6 +1,6 @@
 const CaseStudies = () => {
   return (
-    <div className="flex flex-col items-center gap-8 px-4 py-6 text-center md:px-12 text-darkText">
+    <div className="flex flex-col items-center gap-8 px-4 py-8 text-center md:px-12 text-darkText">
       <h1 className="text-3xl font-semibold ">Case Studies</h1>
       <p className="font-medium ">
         UNAB global energy provides reliable and sustainable energy services for
@@ -12,7 +12,7 @@ const CaseStudies = () => {
           <div className=" relative rounded-xl min-w-[18rem] ">
             <img src="/alpha.jpeg" alt="" className="relative rounded-xl" />
             <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
-            <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  px-8">
               Powering a multi-use facility to empower students in Eastern
               Nigeria.
             </p>
@@ -23,7 +23,7 @@ const CaseStudies = () => {
           <div className=" relative  min-w-[18rem] ">
             <img src="/alpha.jpeg" alt="" className="relative rounded-xl" />
             <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
-            <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  px-8">
               Powering a multi-use facility to empower students in Eastern
               Nigeria.
             </p>
@@ -34,7 +34,7 @@ const CaseStudies = () => {
           <div className=" relative  min-w-[18rem]  ">
             <img src="/alpha.jpeg" alt="" className="relative rounded-xl" />
             <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
-            <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 px-8">
               Powering a multi-use facility to empower students in Eastern
               Nigeria.
             </p>

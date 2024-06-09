@@ -87,7 +87,7 @@ const Values = () => {
   const visibleCards = cards.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
-    <div className="bg-secondary px-4 py-6 text-whiteText md:px-12">
+    <div className="bg-secondary px-4 py-8 text-whiteText md:px-12">
       <h1 className="text-center font-semibold text-3xl pb-8">
         UNAB's Core Values
       </h1>

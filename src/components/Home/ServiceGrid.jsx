@@ -20,15 +20,19 @@ const ServiceGrid = () => {
     },
   ];
   return (
-    <div className=" p-4 md:p-8  bg-[#f9f9f9]">
+    <div className=" px-4 py-8 md:px-12  bg-[#f9f9f9]">
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {services.map((service, index) => (
           <div
             key={index}
             className=" flex flex-col items-center gap-4 bg-white rounded-lg p-4"
           >
-            <div className=" bg-[#002d01] rounded-full p-12">
-              <img src={service.logo} alt="" width={50} />
+            <div className=" bg-[#002d01] rounded-[100%] p-12">
+              <img
+                src={service.logo}
+                alt=""
+                className=" w-[40px] aspect-[1/1]"
+              />
             </div>
             <h1 className=" text-[#0d8f01] font-bold text-2xl">
               {service.heading}

@@ -2,7 +2,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div
-      className="px-4 py-6 md:px-12"
+      className="px-4 py-8 md:px-12"
       style={{ background: "url(/footerbg.png)" }}
     >
       <div className="  flex flex-col md:flex-row gap-12 text-whiteText ">

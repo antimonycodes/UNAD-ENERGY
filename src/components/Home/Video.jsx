@@ -1,6 +1,6 @@
 const Video = () => {
   return (
-    <div className=" px-4 py-6 md:px-12 text-[#131313CC] flex flex-col md:flex-row gap-12">
+    <div className=" px-4 py-8 md:px-12 text-[#131313CC] flex flex-col md:flex-row gap-12">
       <div className=" bg-emerald-600 w-full md:basis-[60%]">
         <video src=""></video>
       </div>

@@ -1,6 +1,6 @@
 const OurStory = () => {
   return (
-    <div className=" px-4 py-6 md:px-12 bg-primary text-darkText text-center">
+    <div className=" px-4 py-8 md:px-12 bg-primary text-darkText text-center">
       <h1 className=" pb-8 text-3xl font-semibold ">Our Story</h1>
       <p className=" text-center md:text-left font-medium text-base">
         One of the biggest challenges we face in Nigeria is the intermittency of

@@ -17,7 +17,7 @@ const Focus = () => {
     },
   ];
   return (
-    <div className=" bg-secondary px-4 py-6 md:px-12 text-center md:text-left text-whiteText ">
+    <div className=" bg-secondary px-4 py-8 md:px-12 text-center md:text-left text-whiteText ">
       <h1 className=" pb-8 text-3xl font-semibold text-center">
         Our Focus Area
       </h1>

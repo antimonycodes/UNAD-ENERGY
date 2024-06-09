@@ -58,13 +58,15 @@ const Header = () => {
 
   return (
     <div
-      className={`relative p-4 md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
+      className={`relative px-4 py-8 md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
         isMobile ? "bg-gradient-to-r from-[#060512] to-[#28992C]" : ""
       }`}
       style={{
         backgroundImage: !isMobile
           ? `url(${slides[currentIndex].img})`
           : ` linear-gradient(143deg, rgba(16,16,16,1) 46%, rgba(14,119,55,1) 57%)`,
+        transition: "ease-in-out",
+        transitionDuration: ".7s",
       }}
     >
       {!isMobile && (

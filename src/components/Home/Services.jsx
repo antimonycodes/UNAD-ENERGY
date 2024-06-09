@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div className=" px-4 py-6 md:px-12 text-darkText bg-[#f9f9f9]">
+    <div className=" px-4 py-8 md:px-12 text-darkText bg-[#f9f9f9]">
       <div className=" text-center items-center flex flex-col gap-6">
         <h1 className="text-3xl font-semibold">Our Services</h1>
         <p className=" font-medium md:max-w-[40rem]">

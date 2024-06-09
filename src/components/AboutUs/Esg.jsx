@@ -1,6 +1,6 @@
 const Esg = () => {
   return (
-    <div className=" bg-primary px-4 py-6 md:px-12 text-darkText flex flex-col gap-8 text-center items-center">
+    <div className=" bg-primary px-4 py-8 md:px-12 text-darkText flex flex-col gap-8 text-center items-center">
       <h1 className=" font-semibold text-3xl text-center">
         Our Environmental, Social and Governance (ESG) Commitments
       </h1>

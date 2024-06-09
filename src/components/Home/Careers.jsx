@@ -17,7 +17,7 @@ const Careers = () => {
     },
   ];
   return (
-    <div className=" text-darkText px-4 py-6 md:px-12 text-center flex flex-col gap-8">
+    <div className=" text-darkText px-4 py-8 md:px-12 text-center flex flex-col gap-8">
       <h1 className=" text-3xl font-semibold">More than just Power</h1>
       <p className="  font-semibold">
         We are constantly innovating, bringing new initiatives and services to

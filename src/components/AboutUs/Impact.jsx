@@ -1,6 +1,6 @@
 const Impact = () => {
   return (
-    <div className=" bg-primary px-4 py-6 md:px-12 text-center md:left md:text-left text-darkText flex flex-col md:flex-row gap-8 ">
+    <div className=" bg-primary px-4 py-8 md:px-12 text-center md:left md:text-left text-darkText flex flex-col md:flex-row gap-8 ">
       <div className=" basis-[80%]">
         <h1 className=" text-3xl font-semibold  pb-8">Our Impact</h1>
         <p className=" font-medium">

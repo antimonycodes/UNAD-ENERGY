@@ -1,6 +1,6 @@
 const Climate = () => {
   return (
-    <div className=" bg-secondary px-4 py-6 md:px-12 text-whiteText flex flex-col gap-8 md:flex-row h-full">
+    <div className=" bg-secondary px-4 py-8 md:px-12 text-whiteText flex flex-col gap-8 md:flex-row h-full">
       <div className=" text-center md:text-left flex flex-col gap-8 md:basis-[60%]">
         <h1 className=" font-semibold text-3xl ">UNAB and Climate Change</h1>
         <p className=" text-sm">

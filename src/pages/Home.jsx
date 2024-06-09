@@ -1,3 +1,4 @@
+// import fade
 import About from "../components/Home/About";
 import Careers from "../components/Home/Careers";
 import CaseStudies from "../components/Home/CaseStudies";
@@ -11,6 +12,7 @@ import Video from "../components/Home/Video";
 const Home = () => {
   return (
     <div className=" bg-primary">
+      {/* <Fade/> */}
       <Header />
       <Services />
       <ServiceGrid />

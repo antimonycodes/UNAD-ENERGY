@@ -1,7 +1,7 @@
 const Partners = () => {
   return (
-    <div className=" px-4 py-6 text-whiteText md:px-12 text-center flex flex-col items-center gap-4 bg-secondary">
-      <h1 className=" text-2xl text-center">UNAB Clients and Partners</h1>
+    <div className=" px-4 py-8 text-whiteText md:px-12 text-center flex flex-col items-center gap-4 bg-secondary">
+      <h1 className=" text-3xl text-center">UNAB Clients and Partners</h1>
       <p>
         Join the thousands of businesses and homeowners across the nation that
         have flipped the switch to UNAB global energy limited.
