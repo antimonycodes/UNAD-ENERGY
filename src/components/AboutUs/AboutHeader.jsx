@@ -15,7 +15,7 @@ const AboutHeader = () => {
     deleteSpeed: "200",
   });
 
-  const { isType, isDelete, isDelay, isDone } = helper;
+  // const { isType, isDelete, isDelay, isDone } = helper;
   // console.log(text);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const AboutHeader = () => {
 
   return (
     <div
-      className="p-4 md:px-12 md:py-4 h-[500px] bg-center bg-cover bg-no-repeat relative"
+      className="p-4 md:px-12 md:py-4 h-[600px] bg-center bg-cover bg-no-repeat relative"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundRepeat: "no-repeat",
@@ -50,15 +50,13 @@ const AboutHeader = () => {
     >
       <Nav />
       <div className="p-[7%] px-0">
-        <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[6rem]">
-          Delivering Alternative <br /> {""}{" "}
+        <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[5rem]">
+          Delivering Alternative <br />
           <span className="text-orangee">{text}</span>
-          {""}
           <span>
             <Cursor cursorColor="#e27b16" />
           </span>
           <br />
-          {""}
           Solutions
         </h1>
       </div>

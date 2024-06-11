@@ -1,14 +1,15 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const ChooseUs = () => {
-  const [aos, setAos] = useState(false);
+  // const [aos, setAos] = useState(false);
   useEffect(() => {
     AOS.init({
-      duration: "600",
-      easing: "ease-in-out-sine",
+      duration: "700",
+      // easing: "ease-in-out-sine",
+      easing: "ease-in",
     });
   }, []);
   const ChooseUsServices = [
@@ -31,13 +32,14 @@ const ChooseUs = () => {
       heading: "Highly Experienced",
       paragraph:
         "7 years plus of experience in providing sustainable solar electricity for both small and big companies.",
-      animation: "fade-up",
+      animation: "slide-left",
     },
     {
       logo: "/save.png",
       heading: "Save Energy Cost",
       paragraph:
         "Saving energy cost over the years by maintenance of the original solar products gotten from us.",
+      animation: "slide-up",
     },
   ];
 
@@ -50,7 +52,9 @@ const ChooseUs = () => {
       >
         Why choose us
       </h1>
-      <p className="font-medium">End to end solutions for economic clusters.</p>
+      <p className="font-medium" data-aos="slide-left" data-aos-delay="600">
+        End to end solutions for economic clusters.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
         {ChooseUsServices.map((service, index) => (
           <div

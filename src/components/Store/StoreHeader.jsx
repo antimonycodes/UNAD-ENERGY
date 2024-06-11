@@ -26,7 +26,7 @@ const StoreHeader = () => {
 
   return (
     <div
-      className="p-4 md:px-12 md:py-4 h-[500px] relative"
+      className="p-4 md:px-12 md:py-4 h-[600px] relative"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

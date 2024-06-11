@@ -3,10 +3,22 @@ import useInView from "./useInView";
 
 const About = () => {
   const aboutGrid = [
-    { number: "266+", text: "Happy Paying Customers" },
-    { number: "2MW+", text: "Current Installed Capacity" },
-    { number: "9MWh", text: "Current Storage Capacity" },
-    { number: "7+", text: "Years in Business" },
+    {
+      number: "266+",
+      text: "Happy Paying Customers",
+      animation: "slide-right",
+    },
+    {
+      number: "2MW+",
+      text: "Current Installed Capacity",
+      animation: "slide-right",
+    },
+    {
+      number: "9MWh",
+      text: "Current Storage Capacity",
+      animation: "slide-right",
+    },
+    { number: "7+", text: "Years in Business", animation: "slide-right" },
   ];
 
   const [ref, inView] = useInView({ threshold: 0.1 });

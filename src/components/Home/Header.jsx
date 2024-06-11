@@ -17,7 +17,7 @@ const Header = () => {
     deleteSpeed: "100",
   });
 
-  const { isType, isDelete, isDelay, isDone } = helper;
+  // const { isType, isDelete, isDelay, isDone } = helper;
 
   const slides = [
     {
@@ -69,7 +69,7 @@ const Header = () => {
 
   return (
     <div
-      className={`relative px-4 py-8 md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
+      className={`relative px-4 py-4 md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
         isMobile ? "bg-gradient-to-r from-[#060512] to-[#28992C]" : ""
       }`}
       style={{
@@ -82,19 +82,22 @@ const Header = () => {
     >
       {!isMobile && (
         <>
-          <div className="absolute top-0 left-0">
+          <div className="absolute top-0 left-0 ">
             <img src="/gradient.png" alt="" className=" w-[30rem]" />
           </div>
-          <div className="absolute top-0" style={{ left: dividerLeft }}>
+          <div
+            className="absolute top-0 z-50"
+            style={{ left: dividerLeft, position: "absolute" }}
+          >
             <img src="/divider.png" alt="" width={412} />
           </div>
         </>
       )}
 
       <Nav />
-      <div className="absolute  top-[25%]  md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold">
+      <div className="absolute  top-[25%]  md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold leading-[4rem] md:leading-[5rem]">
         <h1>Sustainable Solar Electricity for</h1>
-        <span className="text-orangee  text-5xl md:text-7xl font-semibold">
+        <span className="text-orangee  text-5xl md:text-7xl font-semibold ">
           {text}
         </span>
         <span>

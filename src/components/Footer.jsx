@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="w-full md:basis-[20%]">
           <img src="/logo.png" alt="" width={100} />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20">
-          <div>
-            <div className=" flex justify-between gap-20 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className=" col-span-2">
+            <div className=" flex justify-between gap-0 md:gap-4">
               <div>
                 <h2 className=" text-xl font-semibold pb-4">Information</h2>
                 <ul className=" flex flex-col gap-4">

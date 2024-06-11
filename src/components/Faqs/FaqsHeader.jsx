@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "../Nav";
 
 const FaqsHeader = () => {
@@ -26,7 +26,7 @@ const FaqsHeader = () => {
 
   return (
     <div
-      className="p-4 md:px-12 md:py-4 h-[500px] bg-center bg-cover bg-no-repeat relative"
+      className="p-4 md:px-12 md:py-4 h-[600px] bg-center bg-cover bg-no-repeat relative"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}

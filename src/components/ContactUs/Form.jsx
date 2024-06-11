@@ -55,7 +55,7 @@ const Form = () => {
           <input
             type="text"
             name="name"
-            className=" bg-primary w-full rounded-md h-[200px]  mb-4 text-darkText"
+            className=" bg-primary p-0 w-full rounded-md h-[200px]  mb-4 text-darkText"
           />
           <button className=" bg-[#e27b16] w-full py-2 rounded-md">Send</button>
         </div>

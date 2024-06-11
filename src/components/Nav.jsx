@@ -24,20 +24,20 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex items-center">
+    <nav className="flex items-center gap-0 md:gap-8">
       <Link to="/">
         <img
           src="/logo.png"
           alt="Logo"
           width={70}
-          className=" hidden mx-auto  z-50 md:mx-0 md:block"
+          className=" hidden mx-auto  z-50 md:mx-0 md:block text-whiteText relative"
         />
       </Link>
       <div className="z-50 items-center hidden gap-8 list-none md:flex">
         {navLinks.map((navlink, index) => (
           <li
             key={index}
-            className={`px-4 py-2 rounded-3xl ${
+            className={`px-4 py-2 rounded-3xl font-semibold ${
               isActive(navlink.path) || hovered === index ? "bg-[#0D8F41]" : ""
             }`}
             // onMouseEnter={() => setHovered(index)}
@@ -47,7 +47,7 @@ const Nav = () => {
           </li>
         ))}
       </div>
-      <div className={`md:hidden z-[999] ${menuOpen ? "pl-[70%]" : null}`}>
+      <div className={`md:hidden z-[999] ${menuOpen ? "pl-[70%]" : "pl-0"}`}>
         <button
           onClick={toggleMenu}
           className="relative w-8 h-8 focus:outline-none transition-all duration-500"
@@ -77,7 +77,9 @@ const Nav = () => {
                 <Link to={navlink.path}>
                   <li
                     className={`mb-4 text-xl ${
-                      isActive(navlink.path) ? "text-[#0D8F41]" : ""
+                      isActive(navlink.path)
+                        ? "text-[#0D8F41]"
+                        : "text-[whiteText]"
                     }`}
                   >
                     {navlink.name}

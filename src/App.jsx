@@ -7,8 +7,19 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import Store from "./pages/Store";
 import Project from "./pages/Project";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "aos/dist/aos.js";
+import { useEffect } from "react";
 
 function App() {
+  // const [aos, setAos] = useState(false);
+  useEffect(() => {
+    AOS.init({
+      duration: "600",
+      easing: "ease-in-out-sine",
+    });
+  }, []);
   return (
     <>
       <Routes>
