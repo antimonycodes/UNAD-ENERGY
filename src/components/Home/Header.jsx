@@ -11,7 +11,7 @@ const Header = () => {
   const [dividerLeft, setDividerLeft] = useState("42.3%");
 
   const [text, helper] = useTypewriter({
-    words: ["Homes"],
+    words: ["Homes", "Agencies", "Schools", "Companies", "SMEs", "Hospitals"],
     loop: {},
     typeSpeed: "100",
     deleteSpeed: "100",

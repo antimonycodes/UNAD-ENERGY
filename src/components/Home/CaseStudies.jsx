@@ -1,15 +1,20 @@
 const CaseStudies = () => {
   return (
     <div className="flex flex-col items-center gap-8 px-4 py-8 text-center md:px-12 text-darkText">
-      <h1 className="text-3xl font-semibold ">Case Studies</h1>
-      <p className="font-medium ">
+      <h1 className="text-3xl font-semibold " data-aos="slide-down">
+        Case Studies
+      </h1>
+      <p className="font-medium " data-aos="slide-up">
         UNAB global energy provides reliable and sustainable energy services for
         small, medium and large businesses and residents across our target
         markets.
       </p>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
         <div>
-          <div className=" relative rounded-xl min-w-[18rem] ">
+          <div
+            className=" relative rounded-xl min-w-[18rem] "
+            data-aos="fade-down-right"
+          >
             <img src="/alpha.jpeg" alt="" className="relative rounded-xl" />
             <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
             <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  px-8">
@@ -20,7 +25,7 @@ const CaseStudies = () => {
         </div>
         {/*  */}
         <div>
-          <div className=" relative  min-w-[18rem] ">
+          <div className=" relative  min-w-[18rem]" data-aos="slide-down">
             <img src="/alpha.jpeg" alt="" className="relative rounded-xl" />
             <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
             <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  px-8">
@@ -31,7 +36,7 @@ const CaseStudies = () => {
         </div>
         {/*  */}
         <div>
-          <div className=" relative  min-w-[18rem]  ">
+          <div className=" relative  min-w-[18rem]  " data-aos="fade-down-left">
             <img src="/alpha.jpeg" alt="" className="relative rounded-xl" />
             <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
             <p className="absolute w-full text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 px-8">

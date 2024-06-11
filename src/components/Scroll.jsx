@@ -2,7 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
 import { useEffect } from "react";
-const Typewriterr = () => {
+const Scroll = () => {
   useEffect(() => {
     AOS.init({
       duration: "900",
@@ -13,4 +13,4 @@ const Typewriterr = () => {
   return <div></div>;
 };
 
-export default Typewriterr;
+export default Scroll;

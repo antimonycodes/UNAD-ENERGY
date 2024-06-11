@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+// import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Nav from "../Nav";
 
 const AboutHeader = () => {
   const [backgroundImage, setBackgroundImage] = useState("/contactbg.png");
-  // const { text } = useTypewriter({
-  //   words: ["Energy", "degjgew"],
-  //   loop: true,
+  const text = "Energy";
+
+  // const [text, helper] = useTypewriter({
+  //   words: ["Energy"],
+  //   loop: {},
+  //   typeSpeed: "200",
+  //   deleteSpeed: "200",
   // });
-  const [text, helper] = useTypewriter({
-    words: ["Energy"],
-    loop: {},
-    typeSpeed: "200",
-    deleteSpeed: "200",
-  });
 
   // const { isType, isDelete, isDelay, isDone } = helper;
   // console.log(text);
@@ -53,9 +51,7 @@ const AboutHeader = () => {
         <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[5rem]">
           Delivering Alternative <br />
           <span className="text-orangee">{text}</span>
-          <span>
-            <Cursor cursorColor="#e27b16" />
-          </span>
+          <span>{/* <Cursor cursorColor="#e27b16" /> */}</span>
           <br />
           Solutions
         </h1>

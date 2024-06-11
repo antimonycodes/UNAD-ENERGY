@@ -16,7 +16,7 @@ const ServiceGrid = () => {
       heading: "Sell and Swap",
       paragraph:
         "Our outright sale option allows customers to pay the outright cost to purchase a system.",
-      animation: "slide-right",
+      animation: "fade-down-right",
     },
     {
       logo: "/consult.png",
@@ -30,7 +30,7 @@ const ServiceGrid = () => {
       heading: "Solar upgrade and install",
       paragraph:
         "Our outright sale option allows customers to pay the outright cost to purchase a system.",
-      animation: "slide-left",
+      animation: "fade-down-left",
     },
   ];
   return (
