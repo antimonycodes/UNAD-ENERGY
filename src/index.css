@@ -11,11 +11,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body, html {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
 
 /* Typewriter.css */
 @keyframes typing {
