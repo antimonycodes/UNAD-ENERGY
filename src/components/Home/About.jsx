@@ -27,7 +27,7 @@ const About = () => {
     <div ref={ref} className="px-4 py-8 text-center bg-secondary lg:px-28">
       <div className="flex flex-col items-center gap-8">
         <h1 className="text-3xl font-bold text-whiteText">About Us</h1>
-        <p className="md:max-w-[30rem] font-semibold">
+        <p className="md:max-w-[30rem] font-semibold text-whiteText">
           Our mission is to deliver energy solutions for productive use. We do
           this by deploying products, services and systems that power homes and
           business operations and improve economic outcomes for our clients.​

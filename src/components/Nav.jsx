@@ -33,7 +33,7 @@ const Nav = () => {
           className=" hidden mx-auto  z-50 md:mx-0 md:block text-whiteText relative"
         />
       </Link>
-      <div className="z-50 items-center hidden gap-8 list-none md:flex">
+      <div className="z-50 items-center hidden gap-8 list-none md:flex text-whiteText">
         {navLinks.map((navlink, index) => (
           <li
             key={index}
