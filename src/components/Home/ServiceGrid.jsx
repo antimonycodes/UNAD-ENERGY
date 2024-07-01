@@ -12,24 +12,33 @@ const ServiceGrid = () => {
   }, []);
   const services = [
     {
-      logo: "/sell.png",
-      heading: "Sell and Swap",
-      paragraph:
-        "Our outright sale option allows customers to pay the outright cost to purchase a system.",
+      logo: "/audit.png",
+      heading: "Audit Technical Site Survey (TSS)",
       animation: "fade-down-right",
     },
     {
-      logo: "/consult.png",
-      heading: "Consultation",
-      paragraph:
-        "Arnergy's finance model allows customers to lease the asset towards ownership after 36 months.",
+      logo: "/system.png",
+      heading: "System Design and Recommendation",
       animation: "slide-down",
     },
     {
-      logo: "/install.png",
-      heading: "Solar upgrade and install",
-      paragraph:
-        "Our outright sale option allows customers to pay the outright cost to purchase a system.",
+      logo: "/installation.png",
+      heading: "Installation and Commisioning",
+      animation: "fade-down-left",
+    },
+    {
+      logo: "/financing.png",
+      heading: "Financing",
+      animation: "fade-down-right",
+    },
+    {
+      logo: "/operation.png",
+      heading: "Operation and maintenance",
+      animation: "slide-down",
+    },
+    {
+      logo: "/energyaudit.png",
+      heading: "Energy Audit and Load Balancing",
       animation: "fade-down-left",
     },
   ];
@@ -39,22 +48,18 @@ const ServiceGrid = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className=" flex flex-col items-center gap-4 bg-white rounded-lg p-4"
+            className=" flex flex-col items-center justify-center bg-white rounded-lg p-12 gap-8"
             data-aos={service.animation}
           >
-            <div className=" bg-[#002d01] hover:bg-[#0d8f01] rounded-[100%] p-12">
-              <img
-                src={service.logo}
-                alt=""
-                className=" w-[40px] aspect-[1/1]"
-              />
+            <div className=" ">
+              <img src={service.logo} alt="" className=" aspect-[1/1]" />
             </div>
-            <h1 className=" text-[#0d8f01] font-bold text-2xl">
+            <h1 className=" text-[#0d8f01] text-center font-bold text-2xl">
               {service.heading}
             </h1>
-            <p className=" text-darkText font-semibold text-center ">
+            {/* <p className=" text-darkText font-semibold text-center ">
               {service.paragraph}
-            </p>
+            </p> */}
           </div>
         ))}
       </div>

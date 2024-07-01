@@ -1,30 +1,22 @@
 const Partners = () => {
   return (
     <div className=" px-4 py-8 text-whiteText md:px-12 text-center flex flex-col items-center gap-4 bg-secondary">
-      <h1 className=" text-3xl text-center">UNAB Clients and Partners</h1>
+      <h1 className=" font-bold text-2xl">Our Projects</h1>
       <p>
-        Join the thousands of businesses and homeowners across the nation that
-        have flipped the switch to UNAB global energy limited.
+        UNAB global energy provides reliable and sustainable energy services for
+        small, medium and large businesses and residents across our target
+        markets.
       </p>
-      <div className=" py-4">
-        <h1 className=" font-bold text-3xl">Clients</h1>
-        <div className=" grid grid-cols-2 md:flex mt-8 gap-8">
-          <img src="/sheda.png" alt="" width={140} />
-          <img src="/sheda.png" alt="" width={140} />
-          <img src="/sheda.png" alt="" width={140} />
-          <img src="/sheda.png" alt="" width={140} />
-        </div>
+      {/*  */}
+      <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <img src="/oshogbo.png" alt="" />
+        <img src="/ibadan.png" alt="" />
+        <img src="/warri.png" alt="" />
+        <img src="/ileoluji.png" alt="" />
       </div>
-      {/* partners */}
-      <div className=" py-4">
-        <h1 className=" font-bold text-3xl">Partners</h1>
-        <div className=" grid grid-cols-2 md:flex mt-8 gap-8">
-          <img src="/sheda.png" alt="" width={140} />
-          <img src="/sheda.png" alt="" width={140} />
-          <img src="/sheda.png" alt="" width={140} />
-          <img src="/sheda.png" alt="" width={140} />
-        </div>
-      </div>
+      <button className=" text-[#E27B16] border border-[#E27B16] rounded-lg px-1 py-2 ">
+        See More Products
+      </button>
     </div>
   );
 };

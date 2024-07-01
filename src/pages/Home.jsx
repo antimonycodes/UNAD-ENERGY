@@ -3,6 +3,7 @@ import About from "../components/Home/About";
 import Careers from "../components/Home/Careers";
 import CaseStudies from "../components/Home/CaseStudies";
 import ChooseUs from "../components/Home/ChooseUs";
+import FocusArea from "../components/Home/FocusArea";
 import Header from "../components/Home/Header";
 import Partners from "../components/Home/Partners";
 import ServiceGrid from "../components/Home/ServiceGrid";
@@ -16,7 +17,8 @@ const Home = () => {
       <Header />
       <Services />
       <ServiceGrid />
-      <About />
+      {/* <About /> */}
+      <FocusArea />
       <ChooseUs />
       <Partners />
       <Video />
