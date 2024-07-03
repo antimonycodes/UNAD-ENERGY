@@ -8,7 +8,7 @@ const Clients = ({ bgColor = "bg-primary", textColor = "text-darkText" }) => {
         Join the thousands of businesses and homeowners across the nation that
         have flipped the switch to UNAB global energy limited.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-20">
         <img src="/fireswitch.png" alt="" />
         <img src="/ulesson.png" alt="" />
         <img src="/dorlan.png" alt="" />

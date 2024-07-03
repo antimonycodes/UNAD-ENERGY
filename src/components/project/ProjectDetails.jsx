@@ -44,7 +44,7 @@ const ProjectDetails = () => {
   return (
     <>
       <ProjectHeader />
-      <div className="px-4 py-12 md:px-12 text-center flex flex-col items-center gap-8 text-darkText">
+      <div className="px-4 py-12 md:px-12 text-center flex flex-col items-center gap-8 text-whiteText bg-secondary">
         <h1 className="text-3xl font-semibold">{project.title}</h1>
         <p>{project.description}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

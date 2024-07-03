@@ -14,28 +14,28 @@ const ChooseUs = () => {
   }, []);
   const ChooseUsServices = [
     {
-      logo: "/quality.png",
+      logo: "/products.png",
       heading: "Quality Products",
       paragraph:
         "All our products are based on international Solar and highway traffic  standard/certification.",
       animation: "slide-right",
     },
     {
-      logo: "/warranty.png",
+      logo: "/warranty2.png",
       heading: "Service Warranty",
       paragraph:
         "All our installations and products comes with warranty. Also, services warranty available too.",
       animation: "slide-down",
     },
     {
-      logo: "/experience.png",
+      logo: "/experienced.png",
       heading: "Highly Experienced",
       paragraph:
         "7 years plus of experience in providing sustainable solar electricity for both small and big companies.",
       animation: "slide-left",
     },
     {
-      logo: "/save.png",
+      logo: "/cost.png",
       heading: "Save Energy Cost",
       paragraph:
         "Saving energy cost over the years by maintenance of the original solar products gotten from us.",
@@ -64,7 +64,7 @@ const ChooseUs = () => {
             }`}
             data-aos={service.animation}
           >
-            <div className="bg-[#002d01] rounded-full p-12">
+            <div className=" rounded-full p-12">
               <img src={service.logo} alt="" width={50} />
             </div>
             <h1 className="text-[#0d8f01] font-bold">{service.heading}</h1>

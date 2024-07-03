@@ -6,7 +6,7 @@ const Management = () => {
     { img: "/eclipse.png", name: "Jesse Joan", position: "HR/Admin" },
   ];
   return (
-    <div className="  px-4 py-8">
+    <div className="  px-4 py-8 text-darkText">
       <h1 className=" text-center font-bold text-2xl pb-12">Management Team</h1>
 
       <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

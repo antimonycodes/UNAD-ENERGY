@@ -45,7 +45,7 @@ const Values = () => {
   // const visibleCards = cards.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
-    <div className="bg-secondary px-4 py-8 text-whiteText md:px-12">
+    <div className="bg-secondary px-4 py-16 text-whiteText md:px-12">
       <h1 className="text-center font-semibold text-3xl pb-8">
         UNAB's Core Values
       </h1>
@@ -53,13 +53,13 @@ const Values = () => {
         A set of core values guides our work.
       </p>
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-12">
           {cards.map((card, index) => (
             <div key={index} className="flex flex-col items-center gap-4">
               <div className="bg-[#e1e5e2] w-fit rounded-full p-8">
                 <img src={card.icon} alt="" width={80} />
               </div>
-              <h1 className=" text-whiteText text-3xl font-semibold">
+              <h1 className=" text-whiteText text-2xl font-semibold">
                 {card.heading}
               </h1>
             </div>
