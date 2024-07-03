@@ -12,9 +12,9 @@ const ServiceGrid = () => {
   }, []);
   const services = [
     {
-      logo: "/audit.png",
-      heading: "Audit Technical Site Survey (TSS)",
-      animation: "fade-down-right",
+      logo: "/energyaudit.png",
+      heading: "Energy Audit and Technical Site Survey",
+      animation: "fade-down-left",
     },
     {
       logo: "/system.png",
@@ -26,29 +26,24 @@ const ServiceGrid = () => {
       heading: "Installation and Commisioning",
       animation: "fade-down-left",
     },
-    {
-      logo: "/financing.png",
-      heading: "Financing",
-      animation: "fade-down-right",
-    },
+
     {
       logo: "/operation.png",
       heading: "Operation and maintenance",
       animation: "slide-down",
     },
-    {
-      logo: "/energyaudit.png",
-      heading: "Energy Audit and Load Balancing",
-      animation: "fade-down-left",
-    },
   ];
+
+  // className=" flex flex-col items-center justify-center bg-white rounded-lg p-12 ga
   return (
     <div className=" px-4 py-8 md:px-12  bg-[#f9f9f9] overflow-hidden">
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div
             key={index}
-            className=" flex flex-col items-center justify-center bg-white rounded-lg p-12 gap-8"
+            className={`flex flex-col items-center gap-4 bg-white rounded-lg p-12 drop-shadow-md ${
+              index === services.length - 1 && "lg:col-start-2"
+            }`}
             data-aos={service.animation}
           >
             <div className=" ">
