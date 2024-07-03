@@ -21,16 +21,16 @@ const Header = () => {
 
   const slides = [
     {
-      img: "/banner.png",
+      img: "/school.png",
     },
     {
       img: "/banner2.png",
     },
     {
-      img: "/banner3.png",
+      img: "/companies.png",
     },
     {
-      img: "/banner4.png",
+      img: "/hospital.png",
     },
   ];
 
