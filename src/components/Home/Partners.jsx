@@ -1,22 +1,32 @@
 const Partners = () => {
+  const images = [
+    "/atess.png.png",
+    "/jinko.png",
+    "/jasolar.png",
+    "/huawei.png",
+    "/schneider.png",
+    "/victronenergy.png",
+    "/SMA.png",
+    "/AlphaESS.png",
+  ];
+  const duplicatedImages = [...images, ...images];
   return (
-    <div className=" px-4 py-8 text-whiteText md:px-12 text-center flex flex-col items-center gap-4 bg-secondary">
-      <h1 className=" font-bold text-2xl">Our Projects</h1>
-      <p>
-        UNAB global energy provides reliable and sustainable energy services for
-        small, medium and large businesses and residents across our target
-        markets.
-      </p>
-      {/*  */}
-      <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <img src="/oshogbo.png" alt="" />
-        <img src="/ibadan.png" alt="" />
-        <img src="/warri.png" alt="" />
-        <img src="/ileoluji.png" alt="" />
+    <div className=" bg-[#fbfbe7] px-4 py-8">
+      <h1 className=" font-bold text-2xl text-center text-darkText">
+        OEM Partners
+      </h1>
+      <div className="logo whitespace-nowrap mt-20 md:mt-[10rem] ">
+        <div className="logos-slide">
+          {duplicatedImages.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt=""
+              className="w-[10rem] aspect-[1/1]"
+            />
+          ))}
+        </div>
       </div>
-      <button className=" text-[#E27B16] border border-[#E27B16] rounded-lg px-1 py-2 ">
-        See More Products
-      </button>
     </div>
   );
 };

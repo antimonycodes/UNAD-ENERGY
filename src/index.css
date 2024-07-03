@@ -17,8 +17,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
-  overflow-x: hidden; 
+body,
+html {
+  overflow-x: hidden;
 }
 
 /* Typewriter.css */
@@ -128,3 +129,67 @@ body, html {
   opacity: 0;
   animation: text-reveal 0.5s forwards;
 }
+
+/* partners slide */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo {
+  position: relative;
+}
+
+.logos-slide {
+  display: flex;
+  gap: 3rem;
+  width: 200%; /* Adjust to make sure the width is twice the width of one set of images */
+  animation: slide 10s linear infinite;
+}
+
+.logo-wrapper {
+  display: flex;
+  white-space: nowrap;
+}
+
+.logo:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+/* .logo::before,
+.logo::after {
+  position: absolute;
+  content: "";
+  top: 40%;
+  bottom: 0;
+  width: 5rem;
+  height: 40%;
+  z-index: 2;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 192, 203, 0.274)
+  );
+} */
+
+/* .logo::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 192, 203, 0.274)
+  );
+}
+
+.logo::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 192, 203, 0.274)
+  );
+} */

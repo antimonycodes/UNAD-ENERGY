@@ -37,9 +37,12 @@ const ProjectHeader = () => {
       <Nav />
       <div className="pt-[7%]  ">
         <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[6rem] text-whiteText">
-          Coming Soon
+          Take a Look at <br />
+          Our <span className=" text-orangee">Solar</span> <br />
+          Projects
         </h1>
       </div>
+      {/*  */}
     </div>
   );
 };

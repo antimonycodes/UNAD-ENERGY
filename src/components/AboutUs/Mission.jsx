@@ -15,7 +15,7 @@ const Mission = () => {
         </p>
       </div>
       <div className=" w-full ">
-        <img src="/mission.png" alt="" className=" " />
+        <img src="/visionn.png" alt="" className=" w-full " />
       </div>
     </div>
   );
