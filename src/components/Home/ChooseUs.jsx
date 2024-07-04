@@ -52,7 +52,11 @@ const ChooseUs = () => {
       >
         Why choose us
       </h1>
-      <p className="font-medium" data-aos="slide-left" data-aos-delay="600">
+      <p
+        className="font-medium text-center"
+        data-aos="slide-left"
+        data-aos-delay="600"
+      >
         End to end solutions for economic clusters.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
@@ -67,7 +71,9 @@ const ChooseUs = () => {
             <div className=" rounded-full p-12">
               <img src={service.logo} alt="" width={50} />
             </div>
-            <h1 className="text-[#0d8f01] font-bold">{service.heading}</h1>
+            <h1 className="text-[#0d8f01] text-xl font-bold">
+              {service.heading}
+            </h1>
             <p className="text-darkText font-medium text-center ">
               {service.paragraph}
             </p>

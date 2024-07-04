@@ -22,8 +22,8 @@ const AboutUs = () => {
       <OurStory />
       <Values />
       <Esg />
-      <Impact />
       <Mission />
+      <Impact />
       <Clients bgColor="bg-secondary" textColor="text-whiteText" />
       {/* <Climate /> */}
       {/* <Focus /> */}

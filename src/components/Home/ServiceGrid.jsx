@@ -37,11 +37,11 @@ const ServiceGrid = () => {
   // className=" flex flex-col items-center justify-center bg-white rounded-lg p-12 ga
   return (
     <div className=" px-4 py-8 md:px-12  bg-[#f9f9f9] overflow-hidden">
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center gap-4 bg-white rounded-lg p-12 drop-shadow-md ${
+            className={`flex flex-col items-center gap-4 bg-white rounded-lg px-8 py-16 drop-shadow-md ${
               index === services.length - 1 && "lg:col-start-2"
             }`}
             data-aos={service.animation}

@@ -12,12 +12,14 @@ import Projects from "../components/Home/Projects";
 // import Partners from "../components/Home/Projects";
 import ServiceGrid from "../components/Home/ServiceGrid";
 import Services from "../components/Home/Services";
+import TopNav from "../components/TopNav";
 // import Video from "../components/Home/Video";
 
 const Home = () => {
   return (
     <div className=" bg-primary">
       {/* <Fade/> */}
+      <TopNav />
       <Header />
       <Services />
       <ServiceGrid />

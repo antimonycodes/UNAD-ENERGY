@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import Nav from "../Nav";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-// import Typewriter from "./Typewriter"; // Import the Typewriter component
-
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSwitch, setAutoSwitch] = useState(true);
@@ -16,8 +14,6 @@ const Header = () => {
     typeSpeed: "100",
     deleteSpeed: "100",
   });
-
-  // const { isType, isDelete, isDelay, isDone } = helper;
 
   const slides = [
     {
@@ -69,7 +65,7 @@ const Header = () => {
 
   return (
     <div
-      className={`relative px-4 py-4 md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
+      className={`relative px-4 py-4  md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
         isMobile ? "bg-gradient-to-r from-[#060512] to-[#28992C]" : ""
       }`}
       style={{
@@ -95,19 +91,18 @@ const Header = () => {
       )}
 
       <Nav />
-      <div className="absolute  top-[25%]  md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold leading-[4rem] md:leading-[5rem]">
+      <div className="absolute top-[25%] md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold leading-[4rem] md:leading-[5rem]">
         <h1>Sustainable Solar Electricity for</h1>
-        <span className="text-orangee  text-5xl md:text-7xl font-semibold ">
+        <span className="text-orangee text-5xl md:text-7xl font-semibold">
           {text}
         </span>
         <span>
           <Cursor cursorColor="#e27b16" />
         </span>
-        {/* <Typewriter text="Homes" />  */}
       </div>
       {/* slider indicator */}
       {!isMobile && (
-        <div className="flex absolute bottom-8 right-[20%]">
+        <div className="flex absolute bottom-16 right-[15%]">
           {slides.map((slide, index) => (
             <div
               key={index}
@@ -119,6 +114,18 @@ const Header = () => {
           ))}
         </div>
       )}
+      {/* WhatsApp link */}
+      <a
+        href="https://wa.me/08060400742"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-6 right-6 hidden  md:flex items-center gap-4 cursor-pointer "
+      >
+        <img src="/whh.png" alt="" width={40} />
+        <h1 className="bg-primary px-4 py-2 rounded-md text-darkText font-semibold">
+          Message us on Whatsapp
+        </h1>
+      </a>
     </div>
   );
 };

@@ -1,15 +1,15 @@
 const Impact = () => {
   return (
-    <div className=" bg-secondary px-4 py-8 md:px-12 text-center md:left md:text-left text-whiteText flex flex-col md:flex-row gap-8 ">
-      <div className=" basis-[80%]">
-        <h1 className=" text-3xl font-semibold  pb-8">Our Impact</h1>
-        <p className=" font-medium">
+    <div className="bg-primary px-4 py-8 md:px-12 text-center md:left md:text-left text-darkText flex flex-col md:flex-row gap-8">
+      <div className="basis-[80%]">
+        <h1 className="text-3xl font-semibold pb-8">Our Impact</h1>
+        <p className="font-medium leading-10">
           To deliver energy solutions for productive use by deploying products,
           services and systems that power business operations and improve
-          economic outcomes for our clients
+          economic outcomes for our clients.
         </p>
-        <div>
-          <ol className=" font-medium pt-8">
+        <div className=" ml-8 text-left ">
+          <ol className="font-medium pt-8 flex flex-col gap-8 list-disc">
             <li>
               Reducing carbon emission and pollution in the regions we serve.
             </li>
@@ -24,8 +24,8 @@ const Impact = () => {
         </div>
       </div>
       {/*  */}
-      <div className=" w-full basis-[100%]">
-        <img src="/impactt.png" alt="" className=" w-full object-cover" />
+      <div className="w-full basis-[100%]">
+        <img src="/visionn.png" alt="" className="w-full object-cover" />
       </div>
     </div>
   );

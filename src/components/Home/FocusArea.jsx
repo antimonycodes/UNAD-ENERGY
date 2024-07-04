@@ -6,7 +6,7 @@ const FocusArea = () => {
     },
     {
       img: "/focus2.png",
-      text: "Reduce operational energyexpense for Cad1 SAIE’s and Healthcare..",
+      text: "Reduce operational energy expense for Cad1 SAIE’s and Healthcare.",
     },
     {
       img: "/focus3.png",
@@ -14,38 +14,43 @@ const FocusArea = () => {
     },
     {
       img: "/focus4.png",
-      text: "CReduce Co2 emissions and green house effect.",
+      text: "Reduce CO2 emissions and greenhouse effect.",
     },
   ];
+
   return (
-    <>
-      <div className=" text-whiteText bg-secondary px-4 py-12 md:px-12  ">
-        <div>
-          <h1 className=" text-center font-semibold text-2xl pb-12">
-            Our Focus Areas
-          </h1>
-          <p>
-            We improve businesses and economic outcomes by emphasising reliable
-            energy for productive use and reducing OPEX costs that threaten the
-            sustainability of our target business clusters. We have perfected
-            our role as a distributed utility by reducing pressure on the
-            national grid and allowing local grid activity to serve industrial
-            zones and the public good, thus stimulating economic growth.
-          </p>
-        </div>
-        {/*  */}
-        <div className=" pt-16 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {areas.map((area, index) => (
-            <div key={index} className="flex flex-col items-center gap-8">
-              <div className=" bg-primary w-fit p-4 rounded-lg">
-                <img src={area.img} alt="" className=" w-[40px]" />
-              </div>
-              <h1 className=" text-center">{area.text}</h1>
-            </div>
-          ))}
-        </div>
+    <div className="text-whiteText bg-secondary px-4 py-12 md:px-12">
+      <div>
+        <h1 className="text-center font-semibold text-2xl pb-12">
+          Our Focus Areas
+        </h1>
+        <p>
+          We improve businesses and economic outcomes by emphasizing reliable
+          energy for productive use and reducing OPEX costs that threaten the
+          sustainability of our target business clusters. We have perfected our
+          role as a distributed utility by reducing pressure on the national
+          grid and allowing local grid activity to serve industrial zones and
+          the public good, thus stimulating economic growth.
+        </p>
       </div>
-    </>
+      <div className="pt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {areas.map((area, index) => (
+          <div
+            key={index}
+            className={`flex flex-col items-center gap-8 ${
+              index === areas.length - 1
+                ? "md:col-start-2 lg:col-start-auto"
+                : ""
+            }`}
+          >
+            <div className="bg-primary w-fit p-4 rounded-lg">
+              <img src={area.img} alt="" className="w-[40px]" />
+            </div>
+            <h1 className="text-center px-8">{area.text}</h1>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
