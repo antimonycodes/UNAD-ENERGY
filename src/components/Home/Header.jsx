@@ -65,7 +65,7 @@ const Header = () => {
 
   return (
     <div
-      className={`relative px-4 py-4  md:px-12 w-full bg-cover bg-center bg-no-repeat h-[400px] md:h-[600px] ${
+      className={`relative px-4 py-4  md:px-12 w-full bg-cover bg-center bg-no-repeat h-[600px] md:h-[600px] ${
         isMobile ? "bg-gradient-to-r from-[#060512] to-[#28992C]" : ""
       }`}
       style={{
