@@ -91,7 +91,7 @@ const Header = () => {
       )}
 
       <Nav />
-      <div className="absolute top-[12%] sm:top-[15%] md:top-[25%] md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold leading-[4rem] md:leading-[5rem]">
+      <div className="absolute top-[10%] sm:top-[15%] md:top-[25%] md:max-w-[650px] text-white text-5xl md:text-7xl font-semibold leading-[4rem] md:leading-[5rem]">
         <h1>Sustainable Solar Electricity for</h1>
         <span className="text-orangee text-5xl md:text-7xl font-semibold">
           {text}
