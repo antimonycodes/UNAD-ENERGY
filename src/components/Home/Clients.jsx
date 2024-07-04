@@ -1,17 +1,39 @@
-const Clients = ({ bgColor = "bg-primary", textColor = "text-darkText" }) => {
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const Clients = ({
+  bgColor = "bg-primary",
+  textColor = "text-darkText",
+  animate = true,
+}) => {
   const clients = [
-    { src: "/fireswitch.png", alt: "Fireswitch" },
-    { src: "/ulesson.png", alt: "ULesson" },
-    { src: "/dorlan.png", alt: "Dorlan" },
-    { src: "/immigation.png", alt: "Immigation" },
+    { src: "/fireswitch.png", alt: "Fireswitch", animation: "slide-right" },
+    { src: "/ulesson.png", alt: "ULesson", animation: "slide-down" },
+    { src: "/dorlan.png", alt: "Dorlan", animation: "slide-up" },
+    { src: "/immigation.png", alt: "Immigation", animation: "slide-right" },
   ];
+
+  useEffect(() => {
+    if (animate) {
+      AOS.init({
+        duration: 700,
+        easing: "ease-in",
+      });
+    }
+  }, [animate]);
 
   return (
     <div
       className={`px-4 py-8 ${textColor} md:px-12 text-center flex flex-col items-center gap-8 ${bgColor}`}
     >
-      <h1 className="font-bold text-2xl pt-8">UNAB Clients</h1>
-      <p>
+      <h1
+        className="font-bold text-2xl pt-8"
+        data-aos={animate ? "fade-up" : undefined}
+      >
+        UNAB Clients
+      </h1>
+      <p data-aos={animate ? "fade-up" : undefined}>
         Join the thousands of businesses and homeowners across the nation that
         have flipped the switch to UNAB global energy limited.
       </p>
@@ -24,6 +46,7 @@ const Clients = ({ bgColor = "bg-primary", textColor = "text-darkText" }) => {
                 ? "md:col-start-2 lg:col-start-auto"
                 : ""
             }`}
+            data-aos={animate ? client.animation : undefined}
           >
             <img src={client.src} alt={client.alt} />
           </div>

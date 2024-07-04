@@ -24,7 +24,11 @@ const AboutUs = () => {
       <Esg />
       <Mission />
       <Impact />
-      <Clients bgColor="bg-secondary" textColor="text-whiteText" />
+      <Clients
+        bgColor="bg-secondary"
+        textColor="text-whiteText"
+        animate={false}
+      />
       {/* <Climate /> */}
       {/* <Focus /> */}
       <Partners />
