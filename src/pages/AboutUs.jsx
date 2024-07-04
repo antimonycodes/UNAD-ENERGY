@@ -6,8 +6,9 @@ import Impact from "../components/AboutUs/Impact";
 import Mission from "../components/AboutUs/Mission";
 import OurStory from "../components/AboutUs/OurStory";
 import Values from "../components/AboutUs/Values";
-import Partners from "../components/Home/Partners";
+// import Partners from "../components/Home/Partners";
 import Clients from "../components/Home/Clients";
+import Carousel from "../components/Home/Carousel";
 
 const AboutUs = () => {
   // const headerData = {
@@ -31,7 +32,8 @@ const AboutUs = () => {
       />
       {/* <Climate /> */}
       {/* <Focus /> */}
-      <Partners />
+      {/* <Partners /> */}
+      <Carousel />
     </div>
   );
 };
