@@ -49,10 +49,11 @@ const AboutHeader = () => {
       <Nav />
       <div className="p-[7%] px-0">
         <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[5rem] text-whiteText">
-          Delivering Alternative <br />
-          <span className="text-orangee">{text}</span>
-          <span>{/* <Cursor cursorColor="#e27b16" /> */}</span>
-          <br />
+          Delivering Clean <br />
+          <span className="text-orangee">{text}</span> 
+          {""}
+  
+           <br/>
           Solutions
         </h1>
       </div>

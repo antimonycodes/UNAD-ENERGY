@@ -28,7 +28,7 @@ const ContactHeader = () => {
     <div
       className="p-4 md:px-12 md:py-4 h-[600px] bg-cover bg-no-repeat relative"
       style={{
-        backgroundImage: "url(/contactbg.png)",
+        backgroundImage: "url(/cu.png)",
         backgroundPosition: backgroundPosition,
         backgroundSize: "cover",
       }}
@@ -36,7 +36,8 @@ const ContactHeader = () => {
       <Nav />
       <div className="pt-[7%]">
         <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[6rem] text-whiteText">
-          Start the <span className="text-orangee">Solar</span> Conversation
+          Get a < span className="text-orangee">Quote in</span>
+          <br /> 60 Minutes
         </h1>
       </div>
     </div>

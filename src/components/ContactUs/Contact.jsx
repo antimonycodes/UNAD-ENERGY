@@ -3,22 +3,27 @@ const Contact = () => {
     {
       icon: "/location.png",
       heading: "UNAB OFFICE",
-      paragraph: "22A, Adeleke Adedoyin Str. Victoria  Island, Lagos",
+      paragraph: "House 89, Oba Ovarenwem Street, Works and Housing Estate Gwarimpa, Abuja.",
     },
     {
       icon: "/msg.png",
       heading: "Email Us",
-      paragraph: "info@unab.comsales@unab.com",
+      paragraph: "info@unabenergy.com  unabenergy04@gmail.com",
+    },
+    {
+      icon: "/hrs.png",
+      heading: "Working Hours",
+      paragraph: "9am - 5pm Monday to Friday",
     },
     {
       icon: "/phone.png",
       heading: "Let Us Talk",
-      paragraph: "07002288888",
+      paragraph: "+2348060400742",
     },
   ];
   return (
     <div className=" bg-primary px-4 py-6 md:px-12 text-darkText">
-      <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 items-center gap-16">
+      <div className=" grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 items-center gap-16">
         {contacts.map((contact, index) => (
           <div
             key={index}

@@ -9,7 +9,7 @@ const Impact = () => {
           economic outcomes for our clients.
         </p>
         <div className=" ml-8 text-left ">
-          <ol className="font-medium pt-8 flex flex-col gap-8 list-disc">
+          <ol className="font-medium pt-8 flex flex-col gap-4 list-disc">
             <li>
               Reducing carbon emission and pollution in the regions we serve.
             </li>

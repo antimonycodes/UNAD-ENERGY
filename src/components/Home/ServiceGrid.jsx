@@ -13,12 +13,12 @@ const ServiceGrid = () => {
   const services = [
     {
       logo: "/energyaudit.png",
-      heading: "Energy Audit and Technical Site Survey",
+      heading: "Energy Audit and Management",
       animation: "fade-down-left",
     },
     {
       logo: "/system.png",
-      heading: "System Design and Recommendation",
+      heading: "Design and Implementation",
       animation: "slide-down",
     },
     {

@@ -4,22 +4,23 @@ import "aos/dist/aos.css";
 
 const Management = () => {
   const cards = [
+
     {
       img: "/eclipse.png",
+      name: "Timothy Ayodele",
+      position: "Chief Executive Officer",
+      animation: "slide-down",
+    },
+    {
+      img: "/cto.png",
       name: "Bright Antia",
-      position: "CTO",
+      position: "Chief Technology Officer",
       animation: "slide-right",
     },
     {
       img: "/eclipse.png",
-      name: "Timothy Ayodele",
-      position: "CEO",
-      animation: "slide-down",
-    },
-    {
-      img: "/eclipse.png",
       name: "Kasarachi Lekwauwa",
-      position: "CFO",
+      position: "Chief Financial Officer",
       animation: "fade-up",
     },
     {
@@ -28,6 +29,12 @@ const Management = () => {
       position: "HR/Admin",
       animation: "slide-left",
     },
+    {
+      img:"/eclipse.png",
+      name:"Arc Iffiok Antia",
+      position:"Design and Strategy",
+      animation:"slide-up"
+    }
   ];
 
   useEffect(() => {
@@ -42,7 +49,7 @@ const Management = () => {
       <h1 className="text-center font-bold text-2xl pb-12" data-aos="fade-up">
         Management Team
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-20">
         {cards.map((card, index) => (
           <div
             key={index}

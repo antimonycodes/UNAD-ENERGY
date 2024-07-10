@@ -74,7 +74,7 @@ const ChooseUs = () => {
             <h1 className="text-[#0d8f01] text-xl font-bold">
               {service.heading}
             </h1>
-            <p className="text-darkText font-medium text-center ">
+            <p className="text-darkText font-medium text-center pb-8 ">
               {service.paragraph}
             </p>
           </div>

@@ -4,7 +4,7 @@ import Carousel from "../components/Home/Carousel";
 // import Careers from "../components/Home/Careers";
 // import CaseStudies from "../components/Home/CaseStudies";
 import ChooseUs from "../components/Home/ChooseUs";
-import Clients from "../components/Home/Clients";
+// import Clients from "../components/Home/Clients";
 import FocusArea from "../components/Home/FocusArea";
 import Header from "../components/Home/Header";
 import Management from "../components/Home/Management";
@@ -28,7 +28,7 @@ const Home = () => {
       <FocusArea />
       <ChooseUs />
       <Projects />
-      <Clients />
+      {/* <Clients /> */}
       <Carousel />
       {/* <Partners /> */}
       {/* <Video /> */}

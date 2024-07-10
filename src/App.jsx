@@ -1,19 +1,18 @@
-import Footer from "./components/Footer";
-
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Faqs from "./pages/Faqs";
-import Home from "./pages/Home";
-import { Route, Routes } from "react-router-dom";
-import Store from "./pages/Store";
-import Project from "./pages/Project";
-
-import AOSWrapper from "./components/AOSwrapper";
-import ProjectDetails from "./components/project/ProjectDetails";
+// App.jsx
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import Faqs from './pages/Faqs';
+import Home from './pages/Home';
+import Store from './pages/Store';
+import Project from './pages/Project';
+import ProjectDetails from './components/project/ProjectDetails';
 
 function App() {
   return (
-    <AOSWrapper>
+    <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
@@ -23,8 +22,7 @@ function App() {
         <Route path="/store" element={<Store />} />
         <Route path="/faqs" element={<Faqs />} />
       </Routes>
-      <Footer />
-    </AOSWrapper>
+    </Layout>
   );
 }
 

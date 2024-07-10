@@ -8,9 +8,9 @@ const ProjectHeader = () => {
     const updateBackground = () => {
       const width = window.innerWidth;
       if (width <= 768) {
-        setBackgroundImage("/storemobile.png");
+        setBackgroundImage("/nuprojectbgmobile.png");
       } else {
-        setBackgroundImage("/storebg.png");
+        setBackgroundImage("/nuprojectbg.png");
       }
     };
 
@@ -37,9 +37,8 @@ const ProjectHeader = () => {
       <Nav />
       <div className="pt-[7%]  ">
         <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[6rem] text-whiteText">
-          Take a Look at <br />
-          Our <span className=" text-orangee">Solar</span> <br />
-          Projects
+          We Build   <span className=" text-orangee">SYSTEM</span> <br />
+          that last
         </h1>
       </div>
       {/*  */}

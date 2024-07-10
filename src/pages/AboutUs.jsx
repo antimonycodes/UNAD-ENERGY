@@ -7,8 +7,9 @@ import Mission from "../components/AboutUs/Mission";
 import OurStory from "../components/AboutUs/OurStory";
 import Values from "../components/AboutUs/Values";
 // import Partners from "../components/Home/Partners";
-import Clients from "../components/Home/Clients";
+// import Clients from "../components/Home/Clients";
 import Carousel from "../components/Home/Carousel";
+import Management from "../components/Home/Management";
 
 const AboutUs = () => {
   // const headerData = {
@@ -25,15 +26,16 @@ const AboutUs = () => {
       <Esg />
       <Mission />
       <Impact />
-      <Clients
+      {/* <Clients
         bgColor="bg-secondary"
         textColor="text-whiteText"
         animate={false}
-      />
+      /> */}
       {/* <Climate /> */}
       {/* <Focus /> */}
       {/* <Partners /> */}
       <Carousel />
+      <Management/>
     </div>
   );
 };
