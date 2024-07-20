@@ -41,7 +41,7 @@ const Esg = () => {
           />
           {/* Desktop Images */}
           <img
-            src="/public/world.png"
+            src="/world.png"
             alt=""
             width={300}
             className="hidden md:block absolute right-[-84%] top-[8%] "
