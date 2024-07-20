@@ -21,7 +21,7 @@ const FocusArea = () => {
     },
     {
       img: "/focus4.png",
-      text: "Reduce CO2 emissions and greenhouse effect.",
+      text: "Reduce CO₂ emissions and greenhouse effect.",
       animation: "slide-left",
     },
   ];
@@ -65,7 +65,7 @@ const FocusArea = () => {
             <div className="bg-primary w-fit p-4 rounded-lg">
               <img src={area.img} alt="" className="w-[40px]" />
             </div>
-            <h1 className="text-center px-8">{area.text}</h1>
+            <h1 className="text-center px-8" dangerouslySetInnerHTML={{ __html: area.text }} />
           </div>
         ))}
       </div>

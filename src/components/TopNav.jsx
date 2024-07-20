@@ -12,10 +12,10 @@ const TopNav = () => {
   return (
     <div className="bg-[#003901] px-4 md:px-12 py-6 hidden lg:flex flex-wrap items-center justify-between">
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-whiteText mb-4 md:mb-0">
-        <div className="flex items-center gap-4 cursor-pointer" onClick={() => handlePhoneCall("08060400742")}>
+        {/* <div className="flex items-center gap-4 cursor-pointer" onClick={() => handlePhoneCall("08060400742")}>
           <img src="/phh.png" alt="Phone" />
           <h2>08060400742</h2>
-        </div>
+        </div> */}
         <div className="flex items-center gap-4 cursor-pointer" onClick={() => handlePhoneCall("08027994029")}>
           <img src="/phh.png" alt="Phone" />
           <h2>08027994029</h2>

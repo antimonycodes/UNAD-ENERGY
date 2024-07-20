@@ -37,7 +37,7 @@ const ProjectHeader = () => {
       <Nav />
       <div className="pt-[7%]  ">
         <h1 className="text-5xl md:text-7xl font-bold max-w-[40rem] leading-[4rem] md:leading-[6rem] text-whiteText">
-          We Build   <span className=" text-orangee">SYSTEM</span> <br />
+          We Build   <span className=" text-orangee">SYSTEMS</span> <br />
           that last
         </h1>
       </div>

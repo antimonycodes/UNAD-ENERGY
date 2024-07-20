@@ -3,22 +3,28 @@ const Contact = () => {
     {
       icon: "/location.png",
       heading: "UNAB OFFICE",
-      paragraph: "House 89, Oba Ovarenwem Street, Works and Housing Estate Gwarimpa, Abuja.",
+      paragraph: "House 89, Oba Ovarenwem Street,",
+      sub:" Works and Housing Estate Gwarimpa, Abuja."
+
     },
     {
       icon: "/msg.png",
       heading: "Email Us",
-      paragraph: "info@unabenergy.com  unabenergy04@gmail.com",
+      paragraph: "info@unabenergy.com",
+      sub:"unabenergy04@gmail.com"
+
     },
     {
       icon: "/hrs.png",
       heading: "Working Hours",
-      paragraph: "9am - 5pm Monday to Friday",
+      paragraph: "9am - 5pm ",
+      sub:"Monday to Friday"
     },
     {
       icon: "/phone.png",
       heading: "Let Us Talk",
-      paragraph: "+2348060400742",
+      paragraph: "08027994029",
+
     },
   ];
   return (
@@ -31,7 +37,10 @@ const Contact = () => {
           >
             <img src={contact.icon} alt="" width={20} />
             <h1 className=" text-3xl font-semibold">{contact.heading}</h1>
+            <div>
             <p className=" font-medium">{contact.paragraph}</p>
+            <p className=" font-medium">{contact.sub}</p>
+            </div>
           </div>
         ))}
       </div>
